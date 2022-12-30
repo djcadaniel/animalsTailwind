@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/tailwind.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  
+  <title>Animales salvajes</title>
+</head>
+<body class="font-Montserrat dark:bg-gray-900">
+  <nav class="w-full h-14 hidden lg:flex p-4  justify-between bg-primary/75 fixed z-10 dark:bg-gray-800">
+    <div class="h-auto w-auto">
+      <p class="text-xl text-secondary font-black dark:text-white">Animales salvajes</p>
+    </div>
+    <div class="flex space-x-8">
+      <a class="text-md text-secondary dark:text-white" href="#home">Inicio</a>
+      <a class="text-md text-secondary dark:text-white" href="#recomendadas">Galería</a>
+      <a class="text-md text-secondary dark:text-white" href="#rentas_destacadas">Rentas</a>
+      <a class="text-md text-secondary dark:text-white" href="#faqs">FAQS</a>
+      <a class="text-md text-secondary dark:text-white" href="#home">Sobre nosotros</a>
+    </div>
+    <div class="flex space-x-2 dark:text-white">
+      <button class="text-xl" id="toggle">
+        <i class="fa-solid fa-moon"></i>
+      </button>
+    </div>
+  </nav>
+  <div id="tab__bar"></div>
+  <section class="w-full h-screen">
+    <div class="w-full h-full" id="home">
+      <div class="w-full h-full flex flex-col absolute space-y-96 items-center py-10 lg:space-y-0 lg:items-start lg:pt-48 lg:justify-start">
+        <input class="outline-none p-3 rounded-full shadow-sm transition duration-300 focus-within:shadow-xl focus:rin-2 focus:w-11/12 lg:hidden" placeholder="buscar..." type="search">
+        <div class="hidden h-auto lg:w-3/5 lg:flex pb-10">
+          <p class="text-4xl ml-16 font-bold text-white shadow-2xl ">"La grandeza de una nación y su progreso moral puede ser juzgado por la forma en que sus animales son tratados."</p>  
+        </div>
+        <button class="w-36 rounded-full text-xl text-white font-semibold bg-primary py-3 shadow-sm transition duration-500 ease-in-out hover:bg-white hover:text-primary transform hover:-translate-y-1 hover:scale-110 lg:ml-16 dark:bg-gray-700 dark:hover:bg-white dark:hover:text-gray-600">
+          Explorar
+        </button>
+      </div>
+      <div class="w-full h-full">
+        <div class="w-full h-full lg:h-full lg:bg-leopard lg:bg-cover lg:bg-center">
+          <img class="lg:hidden" src="./img/iguana.jpg" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="p-6 mt-10" id="recomendadas">
+      <p class="text-3xl font-semibold text-primary dark:text-white">Galería</p>
+      <div class="w-auto h-full py-5 pb-10 items-center mt-6 overflow-x-auto overscroll-x-contain flex flex-row space-x-6 scroll-smooth hover:scroll-auto scroll-pl-6 snap-x scrollbar-thumb-green-400 scrollbar-thumb-rounded-full scrollbar-thin dark:scrollbar-thumb-gray-500">
+        <div class="snap-start Card rounded-2xl">
+            <div class="rounded-t-2xl w-full h-5/6 bg-loro bg-cover bg-center"></div>
+            <div class="w-full h-1/6 bg-secondary dark:bg-gray-700">
+              <p class="text-white text-bold text-xl px-4">Loro</p>
+              <p class="text-white text-md px-4">Paisajes increíbles</p>
+            </div>
+        </div>
+        <div class="snap-start Card rounded-2xl">
+            <div class="rounded-t-2xl w-full h-5/6 bg-leon bg-cover"></div>
+            <div class="w-full h-1/6 bg-white dark:bg-gray-800">
+              <p class="text-terciary text-bold text-xl px-4">León</p>
+              <p class="text-terciary text-md px-4">La gran manzana</p>
+            </div>
+        </div>
+        <div class="snap-start Card rounded-2xl">
+            <div class="rounded-t-2xl w-full h-5/6 bg-aguila bg-cover"></div>
+            <div class="w-full h-1/6 bg-secondary dark:bg-gray-700">
+              <p class="text-white text-bold text-xl px-4">Águila</p>
+              <p class="text-white text-md px-4">Paisajes increíbles</p>
+            </div>
+        </div>
+        <div class="snap-start Card rounded-2xl">
+            <div class="rounded-t-2xl w-full h-5/6 bg-elefante bg-cover bg-center"></div>
+            <div class="w-full h-1/6 bg-white dark:bg-gray-800">
+              <p class="text-terciary text-bold text-xl px-4">Elefante</p>
+              <p class="text-terciary text-md px-4">La gran manzana</p>
+            </div>
+        </div>
+        <div class="snap-start Card rounded-2xl">
+            <div class="rounded-t-2xl w-full h-5/6 bg-puma bg-cover"></div>
+            <div class="w-full h-1/6 bg-secondary dark:bg-gray-700">
+              <p class="text-white text-bold text-xl px-4">Puma</p>
+              <p class="text-white text-md px-4">Paisajes increíbles</p>
+            </div>
+        </div>
+        <div class="snap-start Card rounded-2xl">
+            <div class="rounded-t-2xl w-full h-5/6 bg-tigre bg-cover"></div>
+            <div class="w-full h-1/6 bg-white dark:bg-gray-800">
+              <p class="text-terciary text-bold text-xl px-4">Tigre</p>
+              <p class="text-terciary text-md px-4">La gran manzana</p>
+            </div>
+        </div>
+        <div class="snap-start Card rounded-2xl">
+            <div class="rounded-t-2xl w-full h-5/6 bg-cocodrilo bg-cover bg-center"></div>
+            <div class="w-full h-1/6 bg-secondary dark:bg-gray-700">
+              <p class="text-white text-bold text-xl px-4">Cocodrilo</p>
+              <p class="text-white text-md px-4">Paisajes increíbles</p>
+            </div>
+        </div>
+        
+      </div>
+    </div>
+    <div class="px-6 mt-10 h-auto" id="rentas_destacadas">
+      <p class="text-3xl text-primary font-semibold pb-6 mt-4 dark:text-white">Mejores fotos 2022</p>
+      <div class="w-full h-full flex flex-col items-center justify-center space-y-6">
+        <div class="w-full h-96 bg-delfin bg-cover bg-center rounded-xl">
+          <p class="CardTitle">Chicago</p>
+          <p class="text-sm pl-8 text-black mr-24">2 habitaciones, baño y cocina</p>
+        </div>
+        <div class="lg:grid lg:grid-cols-3 lg:gap-5 lg:w-full w-full space-y-6 lg:space-y-0 lg:space-x-0">
+          <div class="w-full h-96 lg:h-auto bg-sapo bg-cover rounded-xl">
+            <p class="CardTitle">Chicago</p>
+            <p class="text-sm pl-8 text-black mr-24">2 habitaciones, baño y cocina</p>
+          </div>
+          <div class="w-full h-96 bg-raton bg-cover rounded-xl">
+            <p class="CardTitle">Chicago</p>
+            <p class="text-sm pl-8 text-black mr-24">2 habitaciones, baño y cocina</p>
+          </div>
+          <div class="w-full h-96 bg-pescado bg-cover rounded-xl">
+            <p class="CardTitle">Chicago</p>
+            <p class="text-sm pl-8 text-black mr-24">2 habitaciones, baño y cocina</p>
+          </div>
+          <div class="w-full h-96 bg-elefantito bg-cover rounded-xl">
+            <p class="CardTitle">Chicago</p>
+            <p class="text-sm pl-8 text-black mr-24">2 habitaciones, baño y cocina</p>
+          </div>
+          <div class="w-full h-96 bg-fieras bg-cover rounded-xl">
+            <p class="CardTitle">Chicago</p>
+            <p class="text-sm pl-8 text-black mr-24">2 habitaciones, baño y cocina</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class=" px-6 w-full my-10 pb-24" id="faqs">
+      <div class="flex flex-col space-y-4 w-full">
+        <p class="text-2xl text-primary">Sigue estos consejos para cuidarlos:</p>
+        <div class="md:flex md:justify-evenly w-full ">
+          <div class=" text-gray-600 dark:text-white">
+            <li>Prohibir la caza de animales.</li>
+            <li>Evitar la deforestación de bosques.</li>
+            <li>Delimitar las áreas protegidas y reservas naturales.</li>
+            <li>Evitar la contaminación de los recursos naturales.</li>
+            <li>Promover planes para la reproducción en cautiverio.</li>
+          </div>
+          <div class=" text-gray-600 dark:text-white">
+            <li>Contribuir a la disminución de la tala de árboles con el reciclaje.</li>
+            <li>Respetar las áreas protegidas y reservas naturales.</li>
+            <li>Comprar con responsabilidad.</li>
+            <li>Restaurar los ecosistemas.</li>
+            <li>Hacer donaciones.</li>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="w-full h-12 bg-primary/75 fixed left-0 bottom-0 shadow-md flex space-x-8 justify-center items-center dark:bg-gray-700" id="tab_bar">
+    <a class="text-md text-white" href="#home"><i class="fa-solid fa-house"></i></a>
+    <a class="text-md text-white" href="#recomendadas"><i class="fa-solid fa-image"></i></a>
+    <a class="text-md text-white" href="#rentas_destacadas"><i class="fa-solid fa-camera"></i></a>
+    <button id="togglesm" class="text-2xl text-black dark:text-white" ><i class="fa-solid fa-moon"></i></button>
+  </div>
+  <script src="https://kit.fontawesome.com/c4644f56e1.js" crossorigin="anonymous"></script>
+  <script>
+    const htmlElement = document.querySelector('html')
+    const btn = document.querySelector('#toggle')
+    const btnsm = document.querySelector('#togglesm')
+
+    
+    const darkMode = ()=> {
+      htmlElement.classList.contains("dark") ? htmlElement.classList.remove('dark') : htmlElement.classList.add('dark');
+    }
+    btn.addEventListener('click',darkMode)
+    btnsm.addEventListener('click',darkMode)
+  </script>
+</body>
+</html>
